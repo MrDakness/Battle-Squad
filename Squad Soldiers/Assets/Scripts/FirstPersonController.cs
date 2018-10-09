@@ -379,4 +379,5 @@ namespace Ladder.Scripts
             body.AddForceAtPosition(m_CharacterController.velocity * 0.1f, hit.point, ForceMode.Impulse);
         }
     }
+
 }
