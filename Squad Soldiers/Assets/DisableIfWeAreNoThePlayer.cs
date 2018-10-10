@@ -1,16 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Networking;
 
-public class DisableIfWeAreNoThePlayer : MonoBehaviour {
+public class DisableIfWeAreNoThePlayer : NetworkBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    Behaviour[] componentsToDiable;
+
+    void Start()
+    {
+        if (!isLocalPlayer)
+        {
+            for (int i = 0; i < componentsToDiable.Length; i++)
+            {
+
+            }
+        }
+    }
+
 }
