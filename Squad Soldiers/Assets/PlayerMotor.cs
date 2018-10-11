@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotationPlayer : MonoBehaviour {
+public class PlayerMotor : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
