@@ -1,7 +1,7 @@
-# SquadSoldiers
-Things to do to Squad Soldiers
+# Battle Squad
+Things to do to Battle Squad
 
-Change Name. Squad Soldiers is to cringey.
+Battle Squad
 
 Player:
 
