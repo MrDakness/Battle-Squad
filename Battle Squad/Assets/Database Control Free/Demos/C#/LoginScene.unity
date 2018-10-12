@@ -1677,7 +1677,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 772201350}
+      - m_Target: {fileID: 1343323135}
         m_MethodName: LoggedIn_SaveDataButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -2034,7 +2034,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 772201350}
+      - m_Target: {fileID: 1343323135}
         m_MethodName: LoggedIn_LoadDataButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -2273,60 +2273,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 756757381}
   m_CullTransparentMesh: 0
---- !u!1 &772201349
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 772201351}
-  - component: {fileID: 772201350}
-  m_Layer: 0
-  m_Name: Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &772201350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 772201349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3898c69163ce4e945bd98f2cf7cacad5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loginParent: {fileID: 1133789197}
-  registerParent: {fileID: 1530370399}
-  loggedInParent: {fileID: 678242457}
-  loadingParent: {fileID: 1344730231}
-  Login_UsernameField: {fileID: 191257344}
-  Login_PasswordField: {fileID: 1436956998}
-  Register_UsernameField: {fileID: 1804942172}
-  Register_PasswordField: {fileID: 1723355997}
-  Register_ConfirmPasswordField: {fileID: 1832773167}
-  LoggedIn_DataInputField: {fileID: 416381325}
-  LoggedIn_DataOutputField: {fileID: 1282867614}
-  Login_ErrorText: {fileID: 821266350}
-  Register_ErrorText: {fileID: 946549180}
-  LoggedIn_DisplayUsernameText: {fileID: 588581079}
---- !u!4 &772201351
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 772201349}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 201.22, y: 560, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &791172129
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,7 +2606,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 772201350}
+      - m_Target: {fileID: 1343323135}
         m_MethodName: Register_BackButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -3619,7 +3565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1167478587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4398,6 +4344,70 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1326682104}
   m_CullTransparentMesh: 0
+--- !u!1 &1343323132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1343323134}
+  - component: {fileID: 1343323133}
+  - component: {fileID: 1343323135}
+  m_Layer: 0
+  m_Name: Login Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1343323133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343323132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab48bf7cf103174a8f4e652e2acd663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loggedInSceneName: Lobby
+  loggedOutSceneName: LoginMenu
+--- !u!4 &1343323134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343323132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1343323135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343323132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b08d6e3f5a729d4f834001c0ee81661, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loginParent: {fileID: 1133789197}
+  registerParent: {fileID: 1530370399}
+  loadingParent: {fileID: 1344730231}
+  Login_UsernameField: {fileID: 191257344}
+  Login_PasswordField: {fileID: 1436956998}
+  Register_UsernameField: {fileID: 1804942172}
+  Register_PasswordField: {fileID: 1723355997}
+  Register_ConfirmPasswordField: {fileID: 1832773167}
+  Login_ErrorText: {fileID: 821266350}
+  Register_ErrorText: {fileID: 946549180}
 --- !u!1 &1344730231
 GameObject:
   m_ObjectHideFlags: 0
@@ -4585,7 +4595,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 772201350}
+      - m_Target: {fileID: 1343323135}
         m_MethodName: Login_RegisterButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -4967,8 +4977,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 772201350}
-        m_MethodName: Register_RegisterButtonPressed
+      - m_Target: {fileID: 1343323135}
+        m_MethodName: Login_RegisterButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5133,7 +5143,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 772201350}
+      - m_Target: {fileID: 1343323135}
         m_MethodName: LoggedIn_LogoutButtonPressed
         m_Mode: 1
         m_Arguments:
@@ -6547,7 +6557,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 772201350}
+      - m_Target: {fileID: 1343323135}
         m_MethodName: Login_LoginButtonPressed
         m_Mode: 1
         m_Arguments:

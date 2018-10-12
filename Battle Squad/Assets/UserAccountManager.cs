@@ -19,7 +19,6 @@ public class UserAccountManager : MonoBehaviour
         }
         instance = this;
         DontDestroyOnLoad(instance);
-
     }
 
     public static string PlayerUsername { get; protected set; }
