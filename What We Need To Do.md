@@ -39,4 +39,8 @@ Animations:
 We need to make all animations more realistic.
 
 
+Servers and Networking:
+
+We need to make the movement more realistic and not make it glitchy when the player connects to a server
+
 ADD MORE IF YOU COME UP WITH SOMETHING
