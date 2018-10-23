@@ -1149,6 +1149,7 @@ GameObject:
   - component: {fileID: 691600866}
   - component: {fileID: 691600865}
   - component: {fileID: 691600864}
+  - component: {fileID: 691600867}
   m_Layer: 0
   m_Name: FirstMenu
   m_TagString: Untagged
@@ -1238,6 +1239,17 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &691600867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 691600862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ff4d64caad45424186f392341438e2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &705194143 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224168259267327266, guid: e17f9b19dc151a54f9b0f1298e47e56b,
@@ -3685,7 +3697,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 691600867}
+        m_MethodName: PlayCrimea
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
