@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: bcf33685f4079984db9428e0990e4bd9
-timeCreated: 1484506566
-licenseType: Store
 ModelImporter:
-  serializedVersion: 18
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: ar_3_main
     100002: Armature
@@ -45,21 +43,45 @@ ModelImporter:
     9500000: //RootNode
     13700000: ar_3_main
     13700002: arms_mesh
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arms Material
+    second: {fileID: 2100000, guid: a5c25d33ff4fb084f90ccf3f0b3659b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Guns Material
+    second: {fileID: 2100000, guid: e11c4f3ee458bf446918382a2f5f9451, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 0
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftFoot' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: aim@assault_rifle_3
@@ -71,6 +93,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -113,6 +136,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: aim_fire@assault_rifle_3
       takeName: Armature|aim_fire@assault_rifle_3
@@ -123,6 +147,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -165,6 +190,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: draw@assault_rifle_3
       takeName: Armature|draw@assault_rifle_3
@@ -175,6 +201,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -217,6 +244,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: fire@assault_rifle_3
       takeName: Armature|fire@assault_rifle_3
@@ -227,6 +255,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -269,6 +298,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: idle@assault_rifle_3
       takeName: Armature|idle@assault_rifle_3
@@ -279,6 +309,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
@@ -321,6 +352,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: jump@assault_rifle_3
       takeName: Armature|jump@assault_rifle_3
@@ -331,6 +363,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -373,6 +406,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: reload@assault_rifle_3
       takeName: Armature|reload@assault_rifle_3
@@ -383,6 +417,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -425,6 +460,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: run@assault_rifle_3
       takeName: Armature|run@assault_rifle_3
@@ -435,6 +471,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
@@ -477,6 +514,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: walk@assault_rifle_3
       takeName: Armature|walk@assault_rifle_3
@@ -487,6 +525,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
@@ -529,44 +568,123 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.9999999
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
-    skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    skeleton:
+    - name: arms@assault_rifle_3(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: arms@assault_rifle_3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 0.024999976, y: 0.024999976, z: 0.024999976}
+    - name: upper_arm_L
+      parentName: Armature
+      position: {x: -3.2835674, y: -0.33883584, z: -0.85591483}
+      rotation: {x: -0.62575364, y: -0.20950387, z: 0.7369638, w: 0.14637232}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: lower_arm_L
+      parentName: upper_arm_L
+      position: {x: 0.0000004768371, y: 12.276693, z: -0.0000007152556}
+      rotation: {x: 0.19680196, y: -0.57221025, z: 0.52090526, w: 0.60208154}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000004}
+    - name: hand_L
+      parentName: Armature
+      position: {x: 2.6918833, y: -18.220407, z: -1.6834066}
+      rotation: {x: -0.029590784, y: 0.15854032, z: 0.95913273, w: -0.23249489}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upper_arm_R
+      parentName: Armature
+      position: {x: 6.290673, y: 5.3448954, z: 3.8484018}
+      rotation: {x: -0.47431538, y: -0.4980519, z: 0.68120444, w: 0.25085804}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: lower_arm_R
+      parentName: upper_arm_R
+      position: {x: 0.00000041723246, y: 12.2766905, z: -0.0000005066394}
+      rotation: {x: 0.6638864, y: -0.64341176, z: -0.3368239, w: 0.17839794}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: hand_R
+      parentName: Armature
+      position: {x: 4.737073, y: -8.164395, z: -2.9637482}
+      rotation: {x: -0.00572632, y: -0.095788926, z: 0.99361134, w: 0.059398945}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: weapon
+      parentName: Armature
+      position: {x: 4.35173, y: -9.283852, z: -0.8035531}
+      rotation: {x: 1, y: -1.2663068e-14, z: 0.00000032346813, w: 0.00000013315805}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: slider
+      parentName: weapon
+      position: {x: 0.5686332, y: 7.1766577, z: -2.5905464}
+      rotation: {x: 0.000000049269023, y: 0.00000016380577, z: 0.0000000074505593,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mag
+      parentName: Armature
+      position: {x: 4.35173, y: -15.315102, z: -5.569243}
+      rotation: {x: 0.65414375, y: 0.0000004929134, z: 0.00000042629412, w: 0.75637025}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: arms_mesh
+      parentName: arms@assault_rifle_3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 0.024999976, y: 0.024999976, z: 0.024999976}
+    - name: ar_3_main
+      parentName: arms@assault_rifle_3(Clone)
+      position: {x: -0.000000020116545, y: -0.00000006556503, z: -0.0000000059604575}
+      rotation: {x: 0.0000018099951, y: 0, z: -0, w: 1}
+      scale: {x: 0.024999974, y: 0.024999974, z: 0.024999974}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
+  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
