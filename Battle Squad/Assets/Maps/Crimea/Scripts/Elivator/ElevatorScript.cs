@@ -5,23 +5,23 @@ using UnityEngine;
 public class ElevatorScript : MonoBehaviour
 {
 
-    private Animator _animator;
+    private Animator Elevatoranimator;
 
     public GameObject OpenPanel = null;
 
-    private bool _isInsideTrigger = false;
+    private bool PlayerisInsideTrigger = false;
 
     // Use this for initialization
     void Start()
     {
-        _animator = transform.Find("PTK_Elevator_2Floors").GetComponent<Animator>();
+        Elevatoranimator = transform.Find("PTK_Elevator_2Floors").GetComponent<Animator>();
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            _isInsideTrigger = true;
+            PlayerisInsideTrigger = true;
             OpenPanel.SetActive(true);
         }
     }
@@ -30,8 +30,8 @@ public class ElevatorScript : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            _isInsideTrigger = false;
-            _animator.SetBool("open", false);
+            PlayerisInsideTrigger = false;
+            Elevatoranimator.SetBool("open", false);
             OpenPanel.SetActive(false);
         }
     }
@@ -48,12 +48,12 @@ public class ElevatorScript : MonoBehaviour
     void Update()
     {
 
-        if (IsOpenPanelActive && _isInsideTrigger)
+        if (IsOpenPanelActive && PlayerisInsideTrigger)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.Y))
             {
                 OpenPanel.SetActive(false);
-                _animator.SetBool("open", true);
+                Elevatoranimator.SetBool("open", true);
             }
         }
     }
