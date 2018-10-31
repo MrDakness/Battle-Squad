@@ -103,9 +103,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4008797383161726}
-  - component: {fileID: 111002295893753837}
-  - component: {fileID: 114097421092388848}
-  - component: {fileID: 114097384551608036}
   m_Layer: 0
   m_Name: RiotShield_1
   m_TagString: Untagged
@@ -808,28 +805,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.02486596, z: 0.01327379}
   m_Center: {x: -0.005, y: 0.01296702, z: 0.04393027}
---- !u!111 &111002295893753837
-Animation:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000551286308590}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: f89cf734f77f1f8442a8109ad1b7ebbf, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: f89cf734f77f1f8442a8109ad1b7ebbf, type: 2}
-  - {fileID: 7400000, guid: 0b71b67a8dd77293436a43d6ed5f8794, type: 2}
-  - {fileID: 7400000, guid: 585834ea2281f8ab4c1c69708b2f1e9b, type: 2}
-  - {fileID: 7400000, guid: fbfe4c7f4b4373894a729d781da30e4b, type: 2}
-  - {fileID: 7400000, guid: c512dc79c3aaa289409985d6e4742ac0, type: 2}
-  - {fileID: 7400000, guid: a7dc246d6a2cb29d47d36a725f2a3af1, type: 2}
-  - {fileID: 7400000, guid: 1806350d9e7db6b74c4fc803d19c1e8a, type: 2}
-  - {fileID: 7400000, guid: 60747535ca5dfe9b47766ac8cefada0e, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &114000000010156017
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -839,28 +814,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97fe868cf09a17b347ac633887afa5cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114097384551608036
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000551286308590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf6a49ec94650a94634ba92fcc9acd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114097421092388848
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000551286308590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d39b71452d5db804ebe295295975213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!137 &137073913438924789

@@ -35,13 +35,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4081369982431230}
-  - component: {fileID: 114098518464917230}
-  - component: {fileID: 114098520620793583}
-  - component: {fileID: 114000000093911022}
   - component: {fileID: 65000069417402298}
-  - component: {fileID: 114098518490087423}
-  - component: {fileID: 114000664052367349}
-  - component: {fileID: 114010551117414378}
   m_Layer: 0
   m_Name: Claymore_1
   m_TagString: Untagged
@@ -161,28 +155,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09671114, y: 0.4277593, z: 0.6373319}
   m_Center: {x: 0.0191885, y: -0.0114674, z: 0.007606625}
---- !u!114 &114000000093911022
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000555530944510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42458d2f905b58a648890cbfa573346a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114000664052367349
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000555530944510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69a56ecdf8ae068a43bc8aa7bc26bdfb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114010551117412337
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -192,49 +164,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 745b239557b268b84374871335011930, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114010551117414378
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000555530944510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf6f8fd71b8575844e183026111f1de2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114098518464917230
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000555530944510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0594d2aad3734a14d0d259db9814740, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114098518490087423
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000555530944510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 998ac5e0f84844a44d0fffc3e47fae6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114098520620793583
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000555530944510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c445e6b885a30a346660835dc3c1396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

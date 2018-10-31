@@ -66,8 +66,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000023301848045}
-  - component: {fileID: 111002295893753579}
-  - component: {fileID: 114000077772549803}
   m_Layer: 0
   m_Name: Claymore_2
   m_TagString: Untagged
@@ -201,33 +199,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000555581276157}
   m_Mesh: {fileID: 4300000, guid: 6a6d04aaa88dd68a4fb2b01c6478118f, type: 2}
---- !u!111 &111002295893753579
-Animation:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1090715517974255}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 0035c7b2758308b94f56b6d72fe9b2dd, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 0035c7b2758308b94f56b6d72fe9b2dd, type: 2}
-  - {fileID: 7400000, guid: 3e26f95ddb59da8345106c6f086349e4, type: 2}
-  - {fileID: 7400000, guid: c63f3a269e7c349c422f844a6869bb37, type: 2}
-  - {fileID: 7400000, guid: 0c5779a60b743eb74b9d5edff3722504, type: 2}
-  - {fileID: 7400000, guid: d8d8347af6b3898a46f9fb2636d07f68, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 1
---- !u!114 &114000077772549803
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1090715517974255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e40dc15f012f40b54a8f4b1322c4d110, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
