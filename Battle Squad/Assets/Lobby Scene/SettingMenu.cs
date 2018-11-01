@@ -9,6 +9,8 @@ public class SettingMenu : MonoBehaviour {
 
     Resolution[] resolutions;
 
+    public bool Fullscreen;
+
     void Start()
     {
         resolutions = Screen.resolutions;
@@ -38,7 +40,23 @@ public class SettingMenu : MonoBehaviour {
     public void SetFullScreen (bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
-        Debug.Log("Fullscreen!!!");
+    }
+
+    public void SetQuality(int qualityindex)
+    {
+        QualitySettings.SetQualityLevel(qualityindex);
+    }
+
+    public void VsyncOn()
+    {
+        QualitySettings.vSyncCount = 1;
+        Debug.Log("VSYNC IS ON!!!!");
+    }
+
+    public void VsyncOff()
+    {
+        QualitySettings.vSyncCount = 0;
+        Debug.Log("VSYNC IS OFF!!!!");
     }
 
 }

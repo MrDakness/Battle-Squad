@@ -1,28 +1,34 @@
-﻿using UnityEngine;
-using System.Collections
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
-public class AutoType : MonoBehaviour
-{
+public class TypeinScript : MonoBehaviour {
 
-    public float letterPause = 0.2f;
+    public Text displayedText;
+    public Text InputText;
 
-    string message;
+    private string outputString = null;
+    private int i = -1;
+    private bool done;
 
-    // Use this for initialization
-    void Start()
+    // Update is called once per frame
+    void Update()
     {
-        message = guiText.text;
-        guiText.text = "Development";
-        StartCoroutine(TypeText());
-    }
-
-    IEnumerator TypeText()
-    {
-        foreach (char letter in message.ToCharArray())
+        if (!done)
         {
-            guiText.text += letter;
-            yield return 0;
-            yield return new WaitForSeconds(letterPause);
+            displayedText.text = Typewrite(InputText.text);
         }
+    }
+    private string Typewrite(string text)
+    {
+        i++;
+        char[] characters = text.ToCharArray();
+        outputString = outputString + characters[i].ToString ();
+        if (i == (characters.Length - 1))
+        {
+            done = true;
+        }
+        return outputString;
     }
 }
