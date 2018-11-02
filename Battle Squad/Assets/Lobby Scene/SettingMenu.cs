@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class SettingMenu : MonoBehaviour {
 
@@ -10,6 +11,14 @@ public class SettingMenu : MonoBehaviour {
     Resolution[] resolutions;
 
     public bool Fullscreen;
+
+    public AudioMixerGroup MasterAudio;
+
+    public AudioMixerGroup MusicAudio;
+
+    public AudioMixerGroup GameplayAudio;
+
+    public AudioMixerGroup ProgressAudio;
 
     void Start()
     {
@@ -57,6 +66,26 @@ public class SettingMenu : MonoBehaviour {
     {
         QualitySettings.vSyncCount = 0;
         Debug.Log("VSYNC IS OFF!!!!");
+    }
+
+    public void AudioMaster(float mastervolume)
+    {
+        MasterAudio.audioMixer.SetFloat("MasterAudio", mastervolume);
+    }
+
+    public void AudioMusic(float musicvolume)
+    {
+        MusicAudio.audioMixer.SetFloat("Musicaudio", musicvolume);
+    }
+
+    public void AudioGameplay(float gameplayvolume)
+    {
+        GameplayAudio.audioMixer.SetFloat("GameplayAudio", gameplayvolume);
+    }
+
+    public void AudioProgress(float progressvolume)
+    {
+        ProgressAudio.audioMixer.SetFloat("ProgressAudio", progressvolume);
     }
 
 }

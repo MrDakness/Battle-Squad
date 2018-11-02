@@ -7,7 +7,7 @@ public class MenuScript : MonoBehaviour {
 
     public void PlayCrimea()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 
     public void Credits()
@@ -18,6 +18,11 @@ public class MenuScript : MonoBehaviour {
     public void LoadMainMenu()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void loadmultiplayer()
+    {
+        SceneManager.LoadScene(3);
     }
 
     public void ExitGame()

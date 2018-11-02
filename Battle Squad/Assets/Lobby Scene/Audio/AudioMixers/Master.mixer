@@ -14,7 +14,15 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 029b3cf105c297f448835bb9e49d3969
+    name: GameplayAudio
+  - guid: 0a3490c8495fc9c4a9a2ec791b174039
+    name: MasterAudio
+  - guid: e8f11f19553294445bfafe2a26eacaa1
+    name: Musicaudio
+  - guid: 3f5e4de650b07574ab9cc8a05456cbc9
+    name: ProgressAudio
   m_AudioMixerGroupViews:
   - guids:
     - d87e9d839d73d53468f81b81716b7e4b
@@ -67,7 +75,8 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: c6d5c563414b050488b2e916834b334b
-  m_FloatValues: {}
+  m_FloatValues:
+    e8f11f19553294445bfafe2a26eacaa1: 0
   m_TransitionOverrides: {}
 --- !u!243 &243513132656467870
 AudioMixerGroupController:
