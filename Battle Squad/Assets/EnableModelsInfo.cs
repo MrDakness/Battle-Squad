@@ -14,7 +14,7 @@ public class EnableModelsInfo : MonoBehaviour {
     private IEnumerator ActivationRoutine()
     {
         //Wait for 0.1 secs.
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.3f);
 
         //Turn My game object that is set to false(off) to True(on).
         objectToActivate.SetActive(true);

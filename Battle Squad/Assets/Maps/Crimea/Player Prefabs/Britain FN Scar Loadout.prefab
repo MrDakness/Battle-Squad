@@ -641,6 +641,8 @@ GameObject:
   - component: {fileID: 114774077542418966}
   - component: {fileID: 114687494592473420}
   - component: {fileID: 114526799424031834}
+  - component: {fileID: 114025698418297866}
+  - component: {fileID: 114144795557170928}
   m_Layer: 0
   m_Name: Britain FN Scar Loadout
   m_TagString: Player
@@ -3207,6 +3209,19 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114025698418297866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1550596781124472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a81b8bb01bbe4fc4cbc4e39df87cc4d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedH: 1.5
+  speedV: 1.5
 --- !u!114 &114067274023127014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3347,6 +3362,23 @@ MonoBehaviour:
     shootSound: {fileID: 8300000, guid: 38b8b4ab5aeedc8488227cfcdeac6977, type: 3}
     reloadSound: {fileID: 8300000, guid: 1fa9533cb356b9144bf2035a95400229, type: 3}
   noSwitch: 0
+--- !u!114 &114144795557170928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1550596781124472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881826782297168439c04c31e1da24a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentsToDiable:
+  - {fileID: 114286510835468158}
+  - {fileID: 114025698418297866}
+  - {fileID: 20696968143431666}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114181060020270852
 MonoBehaviour:
   m_ObjectHideFlags: 1
