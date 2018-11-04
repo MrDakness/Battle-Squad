@@ -1,8 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using DatabaseControl;
-using UnityEngine.UI;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class UserAccountManager : MonoBehaviour
@@ -17,91 +15,60 @@ public class UserAccountManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         instance = this;
-        DontDestroyOnLoad(instance);
+        DontDestroyOnLoad(this);
     }
 
-    public static string PlayerUsername { get; protected set; }
-    private static string PlayerPassword = " ";
+    //These store the username and password of the player when they have logged in
+    public static string LoggedIn_Username { get; protected set; }
+    private static string LoggedIn_Password = "";
 
-    public static bool IsLoggedIn { get; protected set; }
+    public static bool isLoggedIn { get; protected set; }
 
+    //public static string LoggedInData { get; protected set; }
 
     public string loggedInSceneName = "Lobby";
     public string loggedOutSceneName = "LoginMenu";
 
-    public delegate void OnDataReceivedCallback(string data);
+    public delegate void OnDataReceivedCallBack(string data);
 
-
-
-    public void LoggedOut()
+    public void LogOut()
     {
-        //Called when the player hits the 'Logout' button. Switches back to Login UI and forgets the player's username and password.
-        //Note: Database Control doesn't use sessions, so no request to the server is needed here to end a session.
-        PlayerUsername = "";
-        PlayerPassword = "";
 
+        LoggedIn_Username = "";
+        LoggedIn_Password = "";
+
+        isLoggedIn = false;
+        Debug.Log("User logged out.");
         SceneManager.LoadScene(loggedOutSceneName);
-        Debug.Log("User logged out");
-        IsLoggedIn = false;
-
-
     }
-    public void LoggedIn(string _username, string _password)
-    {
 
-        PlayerUsername = _username;
-        PlayerPassword = _password;
+
+    public void LogIn(string username, string password)
+    {
+        LoggedIn_Username = username;
+        LoggedIn_Password = password;
+
+        isLoggedIn = true;
+        Debug.Log("User logged in as " + username);
 
         SceneManager.LoadScene(loggedInSceneName);
-        Debug.Log("Logged in as: " + _username);
-
-        IsLoggedIn = true;
-
     }
 
-    public void LoggedIn_SaveDataButtonPressed(string data)
-    {
 
-        StartCoroutine(SetData(data));
-    }
-
-    public void LoggedIn_LoadDataButtonPressed(OnDataReceivedCallback onDataReceived)
-    {
-        StartCoroutine(GetData(onDataReceived));
-    }
-
-    IEnumerator GetData(OnDataReceivedCallback onDataReceived)
-    {
-        string data = "ERROR";
-        IEnumerator e = DCF.GetUserData(PlayerUsername, PlayerPassword); // << Send request to get the player's data string. Provides the username and password
-        while (e.MoveNext())
+    public void SendData(string data)
+    { //called when the 'Send Data' button on the data part is pressed
+        if (isLoggedIn)
         {
-            yield return e.Current;
+            //ready to send request
+            StartCoroutine(sendSendDataRequest(LoggedIn_Username, LoggedIn_Password, data)); //calls function to send: send data request
         }
-        string response = e.Current as string; // << The returned string from the request
-
-        if (response == "Error")
-        {
-            //There was another error. Automatically logs player out. This error message should never appear, but is here just in case.
-
-            PlayerUsername = "";
-            PlayerPassword = "";
-
-            Debug.Log("Error: Unknown Error. Please try again later.");
-        }
-        else
-        {
-
-            data = response;
-        }
-        if (onDataReceived != null)
-            onDataReceived.Invoke(data);
     }
 
-    IEnumerator SetData(string data)
+    IEnumerator sendSendDataRequest(string username, string password, string data)
     {
-        IEnumerator e = DCF.SetUserData(PlayerUsername, PlayerPassword, data); // << Send request to set the player's data string. Provides the username, password and new data string
+        IEnumerator e = DCF.SetUserData(username, password, data); // << Send request to set the player's data string. Provides the username, password and new data string
         while (e.MoveNext())
         {
             yield return e.Current;
@@ -111,9 +78,50 @@ public class UserAccountManager : MonoBehaviour
         if (response == "Success")
         {
             //The data string was set correctly. Goes back to LoggedIn UI
-            Debug.Log("Data string was set corrrectly");
+            Debug.Log("Data successfully set.");
+        }
+        else
+        {
+            //There was another error. Automatically logs player out. This error message should never appear, but is here just in case.
+            Debug.Log("Error: Unknown Error. Please try again later.");
+        }
+    }
+
+    // For getting the data, i.e. KILLS AND DEATHS
+    public void GetData(OnDataReceivedCallBack onDataReceived)
+    { //called when the 'Get Data' button on the data part is pressed
+
+        if (isLoggedIn)
+        {
+            //ready to send request
+            StartCoroutine(sendGetDataRequest(LoggedIn_Username, LoggedIn_Password, onDataReceived)); //calls function to send get data request
+
+        }
+    }
+
+
+    IEnumerator sendGetDataRequest(string username, string password, OnDataReceivedCallBack onDataReceived)
+    {
+        string data = "ERROR";
+
+        IEnumerator e = DCF.GetUserData(username, password); // << Send request to get the player's data string. Provides the username and password
+        while (e.MoveNext())
+        {
+            yield return e.Current;
+        }
+        string response = e.Current as string; // << The returned string from the request
+
+        if (response == "Error")
+        {
+            Debug.Log("Data Upload Error. Could be a server error. To check try again, if problem still occurs, contact us.");
+        }
+        else
+        {
+            data = response;
         }
 
+        if (onDataReceived != null)
+            onDataReceived.Invoke(data);
     }
 
 
