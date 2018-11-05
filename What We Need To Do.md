@@ -1,7 +1,7 @@
 # BattleSquads
 Things to do to BattleSquads
 
-Battle Squad
+BattleSquads
 
 Player:
 
