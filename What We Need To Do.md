@@ -1,5 +1,5 @@
-# Battle Squad
-Things to do to Battle Squad
+# BattleSquads
+Things to do to BattleSquads
 
 Battle Squad
 
