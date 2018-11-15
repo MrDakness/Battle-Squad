@@ -15,7 +15,7 @@ public class EnableSceneCameras : MonoBehaviour {
     private IEnumerator ActivationRoutine()
     {
         //Wait for 0.1 secs.
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
 
         //Turn My game object that is set to false(off) to True(on).
         SceneCamera1.SetActive(false);
